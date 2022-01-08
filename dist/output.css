@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -468,6 +468,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-catch-blue-300 {
+  --tw-gradient-from: #2F3A4D;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(47 58 77 / 0));
+}
+
+.via-catch-blue-200 {
+  --tw-gradient-stops: var(--tw-gradient-from), #263B54, var(--tw-gradient-to, rgb(38 59 84 / 0));
+}
+
+.to-catch-blue-100 {
+  --tw-gradient-to: #243B55;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -478,18 +495,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
 .font-bold {
   font-weight: 700;
-}
-
-.text-green-600 {
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 
 .underline {

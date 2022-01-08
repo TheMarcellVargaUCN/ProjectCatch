@@ -4,6 +4,7 @@ module.exports = {
     './index.html'
   ],
   theme: {
+    extend:{
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -11,10 +12,12 @@ module.exports = {
         100: "#243B55",
         200: "#263B54",
         300: "#2F3A4D",
-      } 
-
-      
+      }
     },
+    borderRadius: {
+      'max': '100px'
+    }
+  },
   },
   plugins: [],
 }

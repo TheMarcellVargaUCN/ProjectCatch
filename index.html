@@ -9,7 +9,7 @@
   <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
   <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-r from-catch-blue-300 via-catch-blue-200 to-catch-blue-100">
+<body class="bg-gradient-to-r from-catch-blue-300 via-catch-blue-200 to-catch-blue-100 font-roboto">
   <div class="relative min-h-screen md:flex">
 
     <!-- mobile menu bar -->
@@ -26,45 +26,51 @@
     </div>
   
     <!-- sidebar -->
-    <div class="sidebar bg-blue-800 text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
-  
+    <div class="flex flex-col justify-between sidebar rounded-r-quarter-rad bg-gradient-to-bl from-white/60 to-white/10 opacity-100 backdrop-blur-xl text-blue-100 w-56 space-y-6 py-7 pl-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
       <!-- logo -->
-      <a href="#" class="text-white flex items-center space-x-2 px-4">
-        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-        </svg>
-        <span class="text-2xl font-extrabold">Better Dev</span>
-      </a>
+        <a href="#" class="text-white flex flex-col items-center space-x-2 px-4">
+          <img src="./assets/images/profile.png" alt="profile-image">
+          <span class="text-xl font-medium">Emily Møller</span>
+          <span class="text-l font-light">emilymoller@email.com</span>
+        </a>
   
       <!-- nav -->
-      <nav>
-        <a href="#" class="block py-2.5 px-4 rounded-max transition duration-200 hover:bg-blue-700 hover:text-white">
+      <nav class="flex flex-col gap-4 font-light">
+        <a href="#" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
             <i class="fas fa-home"></i>
             HOME
         </a>
-        <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
+        <a href="" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
             <i class="far fa-image"></i>
             CONTENT
         </a>
-        <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
+        <a href="" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+          <i class="fas fa-user-tie"></i>
           CASES
         </a>
-        <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
+        <a href="" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+          <i class="far fa-chart-bar"></i>
           ANALYTICS
         </a>
-        <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
+        <a href="" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+          <i class="far fa-newspaper"></i>
           BLOG
         </a>
-        <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
-          ANALYTICS
+        <a href="" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+          <i class="far fa-money-bill-alt"></i>  
+          PRICING
         </a>
-        <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
-            PRICING
-        </a>
-        <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
-            SETTINGS
+        <a href="" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+          <i class="fas fa-sliders-h"></i>  
+          SETTINGS
         </a>
       </nav>
+
+      <!-- footer -->
+      <div class="flex flex-col align-items">
+        <p class="text-xs font-light">CatchScan © - All right reserved</p>
+        <hr class="w-16">
+      </div>
     </div>
   
     <!-- content -->

@@ -15,7 +15,11 @@ module.exports = {
       }
     },
     borderRadius: {
-      'max': '100px'
+      'max': '100px',
+      'quarter-rad': '25px'
+    },
+    fontFamily: {
+      'roboto': ['Roboto', 'sans-serif']
     }
   },
   },

@@ -12,7 +12,9 @@ module.exports = {
         100: "#243B55",
         200: "#263B54",
         300: "#2F3A4D",
-      }
+      },
+      "gunpowder-gray": "#BDBDBD",
+      "facebook-blue": "#1877F2",
     },
     borderRadius: {
       'max': '100px',

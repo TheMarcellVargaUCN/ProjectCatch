@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="CatchScan - Blank" content="Blank">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+  <script src="./assets/js/script.js" defer></script>
   <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
   <link href="/dist/output.css" rel="stylesheet">
   <title>CatchScan</title>
@@ -27,7 +28,7 @@
     </div>
   
     <!-- sidebar -->
-    <div class="flex flex-col justify-between sidebar rounded-r-quarter-rad bg-gradient-to-bl from-white/60 to-white/10 opacity-100 backdrop-blur-xl text-blue-100 w-56 space-y-6 py-7 pl-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+    <div class="flex flex-col justify-between sidebar rounded-r-quarter-rad bg-gradient-to-bl from-white/60 to-white/10 backdrop-blur-xl text-blue-100 w-max space-y-6 py-7 pl-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
       <!-- logo -->
         <a href="#" class="text-white flex flex-col items-center space-x-2 px-4">
           <img src="./assets/images/profile.png" alt="profile-image">
@@ -41,27 +42,27 @@
             <i class="fas fa-home"></i>
             HOME
         </a>
-        <a href="" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+        <a href="./assets/pages/content.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
             <i class="far fa-image"></i>
             CONTENT
         </a>
-        <a href="" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+        <a href="./assets/pages/cases.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
           <i class="fas fa-user-tie"></i>
           CASES
         </a>
-        <a href="" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+        <a href="./assets/pages/analytics.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
           <i class="far fa-chart-bar"></i>
           ANALYTICS
         </a>
-        <a href="" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+        <a href="./assets/pages/blog.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
           <i class="far fa-newspaper"></i>
           BLOG
         </a>
-        <a href="" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+        <a href="./assets/pages/pricing.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
           <i class="far fa-money-bill-alt"></i>  
           PRICING
         </a>
-        <a href="" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+        <a href="./assets/pages/settings.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
           <i class="fas fa-sliders-h"></i>  
           SETTINGS
         </a>
@@ -75,9 +76,88 @@
     </div>
   
     <!-- content -->
-    <div class="flex-1 p-10 text-2xl font-bold">
-      content goes here
-    </div>
+    <main class="w-full">
+      <div class="flex flex-row justify-end px-10 pt-4 text-2xl">
+        <span class="fa-stack fa-1x">
+          <a href="#">
+            <i class="fa fa-circle fa-stack-2x text-white/20"></i>
+            <i class="far fa-comment fa-stack-1x text-white"></i>
+          </a>
+        </span>
+        <span class="fa-stack fa-1x">
+          <a href="#" onclick="notifications()">
+            <i class="fa fa-circle fa-stack-2x text-white/20"></i>
+            <i class="far fa-bell fa-stack-1x text-white"></i>
+          </a>
+        </span>
+      </div>
+
+      <div class="flex flex-row justify-end px-10">
+        <img src="./assets/images/notification.png" alt="notification" class="hidden" id="bell">
+      </div>
+
+      <div class="flex flex-col justify-start px-24">
+        <p class="text-2xl text-white font-extralight">Hello,<p>
+        <p class="text-5xl text-white font-medium">Emily👋</p>
+        <br>
+        <p class="text-lg text-white font-extralight">See what has changed since your last login!<p>
+      </div>
+
+      <section class="grid grid-cols-3 grid-rows-2 gap-4 px-24 pt-4">
+        <article class="col-span-2 flex flex-col gap-4 border-dashed border-white border-2 rounded-3xl items-center">
+          <img src="./assets/images/upload.png" class="w-1/12 pt-4" alt="upload">
+          <p class="text-4xl text-white">Browse local files</p>
+          <div class="flex flex-row items-center text-xl font-light">
+            <hr class="w-24">
+            <p class="text-white px-6">or</p>
+            <hr class="w-24">
+          </div>
+          <img class="pb-2" src="./assets/images/instagram.png" alt="instagram">
+        </article>
+        <article class="custom-bg rounded-3xl backdrop-blur-2xl text-white">
+          <p class='pl-16 pt-2 font-light text-lg'>Total revenue:</p>
+          <p class="text-2xl pl-16 pb-2">99999,00 DKK</p>
+          <hr>
+          <p class='pl-16 pt-2 font-light text-lg'>Ongoing cases:</p>
+          <p class="text-2xl pl-16 pb-2">1</p>
+          <hr>
+          <p class='pl-16 pt-2 font-light text-lg'>Done cases:</p>
+          <p class="text-2xl pl-16 pb-2">24</p>
+        </article>
+        <article class="custom-bg rounded-3xl backdrop-blur-2xl col-span-2 text-white px-12 py-2">
+          <p class="text-2xl font-medium">Ongoing cases:</p>
+          <div class="flex flex-row pt-4">
+            <img src="./assets/images/sea.png" alt="sea">
+            <div class="flex flex-col pl-10">
+              <p class="pl-3 font-medium">This is case title</p>
+              <div class="flex pt-5 font-light">
+                <i class="fas fa-check pr-4"></i>
+                <p>06/01/2022    The infringing party has been contacted</p>
+              </div>
+              <div class="flex pt-2 font-light">
+                <i class="fas fa-check pr-4"></i>
+                <p>12/01/2022   The infringing party has responded</p>
+              </div>
+              <div class="flex pt-2 font-light">
+                <i class="fas fa-check pr-4"></i>
+                <p>
+                  13/01/2022    Negotiations has started.
+                  </p>
+              </div>
+            </div>
+          </div>
+            <!-- <div class="flex flex-row justify-end">
+              <button class="bg-white/10 py-2 px-12 rounded-full">More > </button>
+            </div> -->
+        </article>
+        <article class="custom-bg rounded-3xl backdrop-blur-2xl text-white px-10 py-2">
+          <p class="text-lg font-light">Our latest news:</p>
+          <div class="flex flex-row justify-center">
+            <img  class='pt-2 w-10/12' src="./assets/images/blog.png" alt="blog">
+          </div>
+        </article>
+      </section>
+    </main>
   
   </div>
 </body>

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="CatchScan - Blank" content="Blank">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+  <script src="./assets/js/script.js" defer></script>
   <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
   <link href="/dist/output.css" rel="stylesheet">
 </head>
@@ -26,7 +27,7 @@
     </div>
   
     <!-- sidebar -->
-    <div class="flex flex-col justify-between sidebar rounded-r-quarter-rad bg-gradient-to-bl from-white/60 to-white/10 opacity-100 backdrop-blur-xl text-blue-100 w-56 space-y-6 py-7 pl-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+    <div class="flex flex-col justify-between sidebar rounded-r-quarter-rad bg-gradient-to-bl from-white/60 to-white/10 backdrop-blur-xl text-blue-100 w-max space-y-6 py-7 pl-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
       <!-- logo -->
         <a href="#" class="text-white flex flex-col items-center space-x-2 px-4">
           <img src="./assets/images/profile.png" alt="profile-image">
@@ -74,9 +75,26 @@
     </div>
   
     <!-- content -->
-    <div class="flex-1 p-10 text-2xl font-bold">
-      content goes here
-    </div>
+    <section class="w-full">
+      <div class="flex flex-row justify-end px-10 pt-10 pb-3 text-2xl">
+        <span class="fa-stack fa-1x">
+          <a href="#">
+            <i class="fa fa-circle fa-stack-2x text-white/20"></i>
+            <i class="far fa-comment fa-stack-1x text-white"></i>
+          </a>
+        </span>
+
+        <span class="fa-stack fa-1x">
+          <a href="#" onclick="notifications()">
+            <i class="fa fa-circle fa-stack-2x text-white/20"></i>
+            <i class="far fa-bell fa-stack-1x text-white"></i>
+          </a>
+        </span>
+      </div>
+      <div class="flex flex-row justify-end px-10 text-2xl">
+        <img src="./assets/images/notification.png" alt="notification" class="hidden" id="bell">
+      </div>
+    </section>
   
   </div>
 </body>

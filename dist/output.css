@@ -480,10 +480,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.static {
-  position: static;
-}
-
 .absolute {
   position: absolute;
 }
@@ -505,40 +501,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.top-3 {
-  top: 0.75rem;
-}
-
-.top-6 {
-  top: 1.5rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-12 {
-  top: 3rem;
-}
-
 .top-16 {
   top: 4rem;
-}
-
-.right-2 {
-  right: 0.5rem;
 }
 
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
 
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.m-16 {
+  margin: 4rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .my-4 {
@@ -549,6 +541,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mt-2 {
@@ -579,6 +576,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -607,8 +624,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
 }
 
+.h-3\/5 {
+  height: 60%;
+}
+
 .h-10 {
   height: 2.5rem;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .min-h-screen {
@@ -633,12 +658,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-24 {
-  width: 6rem;
-}
-
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .w-3\/4 {
@@ -665,16 +690,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2.5rem;
 }
 
-.w-1 {
-  width: 0.25rem;
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-1\/3 {
+  width: 33.333333%;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-0 {
+  width: 0px;
 }
 
 .w-3 {
   width: 0.75rem;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
 }
 
 .-translate-x-full {
@@ -852,12 +889,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / 0.3);
 }
 
+.bg-success-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 168 83 / var(--tw-bg-opacity));
+}
+
+.bg-gunpowder-gray\/30 {
+  background-color: rgb(189 189 189 / 0.3);
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-bl {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-tr {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
 .from-catch-blue-300 {
@@ -870,8 +920,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 255 255 / 0));
 }
 
+.from-instagram-yellow {
+  --tw-gradient-from: #FEDA77;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(254 218 119 / 0));
+}
+
 .via-catch-blue-200 {
   --tw-gradient-stops: var(--tw-gradient-from), #263B54, var(--tw-gradient-to, rgb(38 59 84 / 0));
+}
+
+.via-instagram-magenta {
+  --tw-gradient-stops: var(--tw-gradient-from), #DD2A7B, var(--tw-gradient-to, rgb(221 42 123 / 0));
 }
 
 .to-catch-blue-100 {
@@ -882,8 +941,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: rgb(255 255 255 / 0.1);
 }
 
+.to-instagram-blue {
+  --tw-gradient-to: #515BD4;
+}
+
 .p-4 {
   padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .py-7 {
@@ -931,6 +998,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -965,6 +1052,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pr-4 {
   padding-right: 1rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-left {
@@ -1004,9 +1099,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -1042,6 +1162,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-white\/20 {
   color: rgb(255 255 255 / 0.2);
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1096,6 +1221,86 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 20px;
 }
 
+.file\:mr-4::-webkit-file-upload-button {
+  margin-right: 1rem;
+}
+
+.file\:mr-4::file-selector-button {
+  margin-right: 1rem;
+}
+
+.file\:rounded-full::-webkit-file-upload-button {
+  border-radius: 9999px;
+}
+
+.file\:rounded-full::file-selector-button {
+  border-radius: 9999px;
+}
+
+.file\:border-0::-webkit-file-upload-button {
+  border-width: 0px;
+}
+
+.file\:border-0::file-selector-button {
+  border-width: 0px;
+}
+
+.file\:bg-gunpowder-gray\/40::-webkit-file-upload-button {
+  background-color: rgb(189 189 189 / 0.4);
+}
+
+.file\:bg-gunpowder-gray\/40::file-selector-button {
+  background-color: rgb(189 189 189 / 0.4);
+}
+
+.file\:py-2::-webkit-file-upload-button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.file\:py-2::file-selector-button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.file\:px-4::-webkit-file-upload-button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.file\:px-4::file-selector-button {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.file\:text-sm::-webkit-file-upload-button {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.file\:text-sm::file-selector-button {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.file\:font-semibold::-webkit-file-upload-button {
+  font-weight: 600;
+}
+
+.file\:font-semibold::file-selector-button {
+  font-weight: 600;
+}
+
+.file\:text-white::-webkit-file-upload-button {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.file\:text-white::file-selector-button {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .placeholder\:text-white::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1109,6 +1314,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .placeholder\:text-white::placeholder {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.invalid\:border-pink-500:invalid {
+  --tw-border-opacity: 1;
+  border-color: rgb(236 72 153 / var(--tw-border-opacity));
+}
+
+.invalid\:text-pink-600:invalid {
+  --tw-text-opacity: 1;
+  color: rgb(219 39 119 / var(--tw-text-opacity));
 }
 
 .hover\:bg-white:hover {
@@ -1131,6 +1346,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline-offset: 2px;
 }
 
+@media (min-width: 640px) {
+  .sm\:w-2\/3 {
+    width: 66.666667%;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:relative {
     position: relative;
@@ -1151,5 +1372,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:translate-x-0 {
     --tw-translate-x: 0px;
     transform: var(--tw-transform);
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }

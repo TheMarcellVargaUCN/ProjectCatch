@@ -15,6 +15,12 @@ module.exports = {
       },
       "gunpowder-gray": "#BDBDBD",
       "facebook-blue": "#1877F2",
+      "success-green": "#34A853",
+      "instagram-yellow": "#FEDA77",
+      "instagram-orange": "#F58529",
+      "instagram-magenta": "#DD2A7B",
+      "instagram-purple": "#8134AF",
+      "instagram-blue": "#515BD4",
     },
     borderRadius: {
       'max': '100px',

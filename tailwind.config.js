@@ -13,6 +13,7 @@ module.exports = {
         200: "#263B54",
         300: "#2F3A4D",
       },
+      "scan-orange": "#F26D21", 
       "gunpowder-gray": "#BDBDBD",
       "facebook-blue": "#1877F2",
       "tag-gray": "rgba(63, 63, 63, 0.7)",

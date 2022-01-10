@@ -22,6 +22,9 @@ module.exports = {
     },
     fontFamily: {
       'roboto': ['Roboto', 'sans-serif']
+    },
+    maxHeight: {
+      '128': '32rem'
     }
   },
   },

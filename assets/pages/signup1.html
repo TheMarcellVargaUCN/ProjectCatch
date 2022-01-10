@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="CatchScan - Blank" content="Blank">
+    <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>CatchScan</title>
+</head>
+
+<body>
+
+    <div class="flex flex-col bg-gradient-to-r from-catch-blue-300 via-catch-blue-200 to-catch-blue-100 font-roboto flex items-center justify-center h-screen">
+    
+        <div class="container rounded-3xl bg-gradient-to-bl from-white/60 to-white/10backdrop-blur-xl text-blue-100 w-100 m-auto flex flex-col text-center md:w-1/2">
+
+            <div>
+                <img class="w-3/4 m-auto mt-8 mb-4" src="/assets/images/catchscanlogo.png">
+            </div>
+
+            <div>
+                <h1 class="text-white text-lg my-4">Create an account</h1>
+            </div>
+            
+            <form class="flex flex-col w-2/3 m-auto mb-0">
+                
+                <div class="flex flex-row gap-x-2">
+                    <div class="container bg-gunpowder-gray/40 rounded-full w-1/2 px-8 py-2 mb-4">
+                        <input class="bg-transparent block w-full placeholder:text-white text-left" type="text" id="firstname" name="firstname" placeholder="Firstname *">
+                    </div>
+    
+                    <div class="container bg-gunpowder-gray/40 rounded-full w-1/2 px-8 py-2 mb-4 ">
+                        <input class="bg-transparent block w-full placeholder:text-white text-left" type="text" id="lastname" name="lastname" placeholder="Lastname *">
+                    </div>    
+                </div>
+
+                <div class="container bg-gunpowder-gray/40 rounded-full m-auto px-8 py-2 mb-4 ">
+                    <input class="bg-transparent block w-full placeholder:text-white text-left" type="text" id="email" name="email" placeholder="Email address *">
+                </div>
+
+                <div class="container bg-gunpowder-gray/40 rounded-full m-auto px-8 py-2 mb-4 ">
+                    <input class="bg-transparent block w-full placeholder:text-white text-left" type="text" id="password" name="password" placeholder="Password *">
+                </div>
+
+                <div class="container bg-gunpowder-gray/40 rounded-full m-auto px-8 py-2 mb-4 ">
+                    <input class="bg-transparent block w-full placeholder:text-white text-left" type="text" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password *">
+                </div>
+
+                <div class="text-xs text-white text-left font-si mb- ml-8">* required</div>
+
+                <div class="bg-gunpowder-gray/40 text-white rounded-full m-auto px-10 py-2 my-4">
+                    <button class="btn" onclick="nextStep()">Next</button>
+                </div>
+
+                </form>
+
+            <div class="bg-white/30 rounded-3xl w-full h-10">
+                <div class="bg-white/30 rounded-full w-10 h-10 flex items-center justify-center space text-sm">
+                    <div class="justify-center">0%</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-xs text-white text-center font-si mb-4">Copyright © 2022 CatchScan - All rights reserved.</div>
+        
+    </div>
+    
+</body>
+
+</html>

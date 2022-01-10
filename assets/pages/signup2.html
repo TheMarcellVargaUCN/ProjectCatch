@@ -7,6 +7,7 @@
     <meta name="CatchScan - Blank" content="Blank">
     <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
     <link href="/dist/output.css" rel="stylesheet">
+    <script src="/assets/js/signup2-script.js" defer></script>
     <title>CatchScan</title>
 </head>
 
@@ -21,34 +22,25 @@
             </div>
 
             <div>
-                <h1 class="text-white text-lg my-4">Create an account</h1>
+                <h1 class="text-white text-lg my-4">When is your birthday? *</h1>
             </div>
             
             <form class="flex flex-col w-2/3 m-auto mb-0">
                 
-                <div class="flex flex-row gap-x-2">
+                <div class="container flex flex-row gap-x-2">
                     <div class="container bg-gunpowder-gray/40 rounded-full w-1/2 px-8 py-2 mb-4">
-                        <input class="bg-transparent block w-full placeholder:text-white text-left" type="text" id="firstname" name="firstname" placeholder="Firstname *">
+                        <select class="w-full" id ="year" name = "yyyy" onchange="change_year(this)"></select>
                     </div>
     
-                    <div class="container bg-gunpowder-gray/40 rounded-full w-1/2 px-8 py-2 mb-4 ">
-                        <input class="bg-transparent block w-full placeholder:text-white text-left" type="text" id="lastname" name="lastname" placeholder="Lastname *">
-                    </div>    
+                    <div class="container bg-gunpowder-gray/40 rounded-full w-1/2 px-8 py-2 mb-4">
+                        <select class="w-full" id ="month" name = "mm" onchange="change_month(this)"></select>
+                    </div>
+
+                    <div class="container bg-gunpowder-gray/40 rounded-full w-1/2 px-8 py-2 mb-4">
+                        <select  id ="day" name = "dd"></select>
+                    </div>
                 </div>
 
-                <div class="container bg-gunpowder-gray/40 rounded-full m-auto px-8 py-2 mb-4 ">
-                    <input class="bg-transparent block w-full placeholder:text-white text-left" type="text" id="email" name="email" placeholder="Email address *">
-                </div>
-
-                <div class="container bg-gunpowder-gray/40 rounded-full m-auto px-8 py-2 mb-4 ">
-                    <input class="bg-transparent block w-full placeholder:text-white text-left" type="text" id="password" name="password" placeholder="Password *">
-                </div>
-
-                <div class="container bg-gunpowder-gray/40 rounded-full m-auto px-8 py-2 mb-4 ">
-                    <input class="bg-transparent block w-full placeholder:text-white text-left" type="text" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password *">
-                </div>
-
-                <div class="text-xs text-white text-left font-si mb- ml-8">* required</div>
 
                 <div class="bg-gunpowder-gray/40 text-white rounded-full m-auto px-10 py-2 my-4">
                     <button class="btn" onclick="nextStep()">Next</button>
@@ -64,7 +56,7 @@
 
         </div>
 
-        <div class="text-xs text-white text-center font-si mb-2">Copyright © 2022 CatchScan - All rights reserved.</div>
+        <div class="text-xs text-white text-center font-si mb-4">Copyright © 2022 CatchScan - All rights reserved.</div>
         
     </div>
     

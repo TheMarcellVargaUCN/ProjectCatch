@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="CatchScan - Blank" content="Blank">
     <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
-    <link href="/assets/css/whitedateicon.css" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
     <title>CatchScan</title>
 </head>
@@ -22,14 +21,20 @@
             </div>
 
             <div>
-                <h1 class="text-white text-lg my-4">When is your birthday? *</h1>
+                <h1 class="text-white text-lg my-4">Upload your avatar</h1>
             </div>
             
             <form class="flex flex-col w-2/3 m-auto mt-0">
                 
-                <div class="container bg-gunpowder-gray/40 rounded-full m-auto px-8 py-2 mb-4 ">
-                    <input class="bg-transparent block w-full placeholder:text-white text-left invalid:border-pink-500 invalid:text-pink-600" type="date" id="birthday" name="birthday">
-                </div>
+                <label for="files" class="container w-24 h-24 m-auto flex items-center justify-center space rounded-lg bg-gunpowder-gray/30">
+                    <i class="far fa-images text-3xl text-white"></i>
+                </label>
+                    
+                <input type="file" id="files" class="hidden m-auto my-4 text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-gunpowder-gray/40 file:text-white">
+
+                <div>
+                    <h3 class="text-white text-sm my-4"></h3>
+                </div>    
 
             </form>
 
@@ -46,9 +51,9 @@
 
 
             <div class="container bg-white/30 rounded-3xl w-full h-10 flex flex-row">
-                <div class="bg-success-green rounded-full w-1/4">
+                <div class="bg-success-green rounded-full w-2/4">
                     <div class="bg-white/30 rounded-full w-10 h-10 flex items-center justify-center text-xs float-right">
-                        <div class="justify-center">25%</div>
+                        <div class="justify-center">50%</div>
                     </div>
                 </div>
             </div>

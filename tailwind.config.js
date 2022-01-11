@@ -15,7 +15,13 @@ module.exports = {
       },
       "scan-orange": "#F26D21", 
       "gunpowder-gray": "#BDBDBD",
+      "success-green": "#34A853",
       "facebook-blue": "#1877F2",
+      "instagram-yellow": "#FEDA77",
+      "instagram-orange": "#F58529",
+      "instagram-magenta": "#DD2A7B",
+      "instagram-purple": "#8134AF",
+      "instagram-blue": "#515BD4",
       "tag-gray": "rgba(63, 63, 63, 0.7)",
       "btn-yellow": "#FFEB3B",
       "btn-red": "#F44336"

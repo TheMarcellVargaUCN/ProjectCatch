@@ -101,7 +101,7 @@
       </div>
       
 
-      <span class="flex flex-row pr-2 pt-4">
+      <span class="flex flex-row pr-2 pt-10">
         <div class="flex pl-24">
           <div class="flex bg-white text-black rounded-l-full border-r">
               <a href="#" class="px-8 py-2 bg-transparent">Profile</a>
@@ -120,49 +120,32 @@
       </span>
       <p class="pl-24 pt-10 text-4xl text-white">Edit account details</p>
       <section class="text-white flex pl-24">
-        <div class="items-center custom-bg-4 p-10 rounded-3xl mt-6">
-          <div class="flex">
+        <div class="items-center custom-bg-4 p-8 rounded-3xl mt-6">
+          <div class="flex gap-4">
             <div>
-              <p class="font-light text-sm pl-6">Firstname</p>
-              <div class="flex bg-gunpowder-gray/30 items-center rounded-full mr-4">
-                <p class="py-2 pl-6 pr-24 text-lg">Emily</p>
-              </div>
+              <p class="font-light text-sm pl-6 pb-1">Firstname</p>
+                <input type="text" min="1" max="31" name="date" size="13" value="Emily" class="rounded-full bg-gunpowder-gray/30 py-2 pl-6">
             </div>
             <div>
-              <p class="font-light text-sm pl-6">Lastname</p>
-              <div class="flex bg-gunpowder-gray/30 items-center rounded-full mr-4">
-                <p class="py-2 pl-6 pr-24 text-lg">Møller</p>
-              </div>
+              <p class="font-light text-sm pl-6 pb-1">Lastname</p>
+                <input type="text" min="1" max="31" name="date" size="13" value="Møller" class="rounded-full bg-gunpowder-gray/30 py-2 pl-6">
             </div>
           </div>
           <div class="flex pt-4">
             <div>
-              <p class="font-light text-sm pl-6">Email adress</p>
-              <div class="flex bg-gunpowder-gray/30 items-center rounded-full mr-4">
-                <p class="py-2 pl-6 pr-32 text-lg">emilymoller@gmail.com</p>
-              </div>
+              <p class="font-light text-sm pl-6 pb-1">Email adress</p>
+                <input type="email" min="1" max="31" name="date" value="emilymoller@gmail.com" class="rounded-full bg-gunpowder-gray/30 py-2 pl-6 pr-32">
             </div>
           </div>
-          <div class="flex pt-6">
-            <div class="flex bg-gunpowder-gray/30 items-center rounded-full mr-3">
-              <p class="py-2 px-4">Day</p>
-              <div class="w-10 h-10 bg-gunpowder-gray/40 rounded-full ml-auto">
-                <i class="fas fa-angle-down p-3 flex flex-row place-content-center"></i>
-              </div>
+          <div class="flex pt-6 gap-4">
+            <div>
+              <p class="font-light text-sm pl-6 pb-1">Birthday</p>
+              <input type="date" min="1" max="31" name="date" value="1986-10-24" class="rounded-full bg-gunpowder-gray/30 py-2 px-6">
             </div>
-            <div class="flex bg-gunpowder-gray/30 items-center rounded-full mr-3">
-              <p class="py-2 px-4">Month</p>
-              <div class="w-10 h-10 bg-gunpowder-gray/40 rounded-full ml-auto">
-                <i class="fas fa-angle-down p-3 flex flex-row place-content-center"></i>
-              </div>
-            </div>
-            <div class="flex bg-gunpowder-gray/30 items-center rounded-full">
-              <p class="py-2 px-4">Year</p>
-              <div class="w-10 h-10 bg-gunpowder-gray/40 rounded-full ml-auto">
-                <i class="fas fa-angle-down p-3 flex flex-row place-content-center"></i>
-              </div>
-            </div>
-        </div>
+            <button type="button" class="flex bg-btn-green/60 items-center rounded-full mt-6 ml-4">
+              <p class="py-2 px-8">Save</p>
+            </button>
+          </div>
       </section>
       
     </main>

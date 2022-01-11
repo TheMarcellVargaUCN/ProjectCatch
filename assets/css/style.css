@@ -36,3 +36,7 @@
     line-height: 2rem;
     padding: 20px;
 }
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}

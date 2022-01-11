@@ -18,7 +18,8 @@ module.exports = {
       "facebook-blue": "#1877F2",
       "tag-gray": "rgba(63, 63, 63, 0.7)",
       "btn-yellow": "#FFEB3B",
-      "btn-red": "#F44336"
+      "btn-red": "#F44336",
+      "btn-green": "#66BB6A"
     },
     borderRadius: {
       'max': '100px',

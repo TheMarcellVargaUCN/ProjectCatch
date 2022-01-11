@@ -527,30 +527,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 4rem;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.-right-10 {
-  right: -2.5rem;
-}
-
-.-right-5 {
-  right: -1.25rem;
-}
-
-.-right-4 {
-  right: -1rem;
-}
-
-.-right-3 {
-  right: -0.75rem;
-}
-
-.-top-10 {
-  top: -2.5rem;
-}
-
 .-right-3\.5 {
   right: -0.875rem;
 }
@@ -559,12 +535,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: -0.875rem;
 }
 
-.-top-3 {
-  top: -0.75rem;
+.-right-3 {
+  right: -0.75rem;
 }
 
-.-top-4 {
-  top: -1rem;
+.-top-3 {
+  top: -0.75rem;
 }
 
 .col-span-2 {
@@ -595,11 +571,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
 }
 
 .mt-2 {
@@ -638,28 +609,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.ml-8 {
-  margin-left: 2rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-auto {
   margin-top: auto;
 }
 
-.mt-24 {
-  margin-top: 6rem;
+.ml-8 {
+  margin-left: 2rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
+.mt-0 {
+  margin-top: 0px;
 }
 
 .block {
@@ -712,26 +675,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-h-128 {
   max-height: 32rem;
-}
-
-.max-h-fit {
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-}
-
-.max-h-min {
-  max-height: -webkit-min-content;
-  max-height: -moz-min-content;
-  max-height: min-content;
-}
-
-.max-h-full {
-  max-height: 100%;
-}
-
-.max-h-48 {
-  max-height: 12rem;
 }
 
 .min-h-screen {
@@ -824,40 +767,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 20rem;
 }
 
-.max-w-min {
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-}
-
-.max-w-max {
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
-}
-
-.max-w-full {
-  max-width: 100%;
-}
-
-.max-w-fit {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
-}
-
-.flex-grow-0 {
-  flex-grow: 0;
-}
-
-.grow-0 {
-  flex-grow: 0;
-}
-
 .-translate-x-full {
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -921,14 +830,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-1 {
   gap: 0.25rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-8 {
-  gap: 2rem;
 }
 
 .gap-10 {
@@ -1118,10 +1019,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #243B55;
 }
 
-.to-white\/10 {
-  --tw-gradient-to: rgb(255 255 255 / 0.1);
-}
-
 .object-none {
   -o-object-fit: none;
      object-fit: none;
@@ -1230,6 +1127,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
 .pr-2 {
   padding-right: 0.5rem;
 }
@@ -1254,10 +1155,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem;
 }
 
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -1266,16 +1163,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.75rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .text-left {
@@ -1320,6 +1209,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1327,11 +1221,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-7xl {
   font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -1447,6 +1336,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .custom-bg-4{
   background: linear-gradient(207.14deg, rgba(255, 255, 255, 0.49) 0%, rgba(255, 255, 255, 0.07) 99.12%), radial-gradient(100% 100% at 0% 0%, rgba(21, 33, 70, 0.79) 0%, rgba(21, 33, 70, 0.53) 100%);
+}
+
+.custom-bg-side{
+  background: linear-gradient(207.14deg, rgba(255, 255, 255, 0.49) 0%, rgba(255, 255, 255, 0.07) 99.12%);
 }
 
 .upload{

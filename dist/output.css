@@ -685,6 +685,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-height: 32rem;
 }
 
+.max-h-32 {
+  max-height: 8rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -773,6 +777,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .-translate-x-full {
@@ -1013,6 +1021,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-white\/30 {
   background-color: rgb(255 255 255 / 0.3);
+}
+
+.bg-btn-red\/60 {
+  background-color: rgb(244 67 54 / 0.6);
 }
 
 .bg-gradient-to-r {

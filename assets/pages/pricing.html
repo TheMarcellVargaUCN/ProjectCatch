@@ -23,7 +23,7 @@
       <div class="text-white flex flex-row items-center justify-between md:hidden">
         <!-- logo -->
         <a href="#" class=" md:block p-4 m-2 text-white font-bold">
-          <img class="w-1/2" src="assets/images/catch-logo.png">
+          <img class="w-1/2" src="../images/catch-logo.png">
         </a>
     
         <!-- mobile menu button -->
@@ -82,7 +82,7 @@
           <hr class="w-16">
         </div>
       </div>
-  
+    
     <!-- content -->
     <main class="w-full">
       <div class="flex flex-row justify-end px-10 pt-4 text-2xl">
@@ -92,13 +92,13 @@
             <i class="fas fa-video fa-stack-1x text-white"></i>
           </a>
         </span>
-        <span class="fa-stack fa-1x">
+        <span class="fa-stack fa-1x hidden md:inline-block">
           <a href="#">
             <i class="fa fa-circle fa-stack-2x text-white/20"></i>
             <i class="far fa-comment fa-stack-1x text-white"></i>
           </a>
         </span>
-        <span class="fa-stack fa-1x">
+        <span class="fa-stack fa-1x hidden md:inline-block">
           <a href="#" onclick="notifications()">
             <i class="fa fa-circle fa-stack-2x text-white/20"></i>
             <i class="far fa-bell fa-stack-1x text-white"></i>
@@ -111,11 +111,11 @@
       </div>
 
       <div class="flex flex-col justify-start px-24">
-        <img src="../images/catchscanlogo.png" class="w-2/12" alt="logo">
+        <img src="../images/catchscanlogo.png" class="hidden md:inline-block w-64" alt="logo">
       </div>
 
-      <section class="flex flex-row gap-10 px-24 pt-20 text-white">
-        <div class="flex flex-col items-center custom-bg-4 p-10 rounded-3xl mt-6">
+      <section class="flex flex-col items-center justify-center lg:flex-row gap-10 h-fit px-24 pt-12 text-white">
+        <div class="flex flex-col items-center justify-center custom-bg-4 p-10 rounded-3xl mt-6">
           <p class="text-2xl">Freemium</p>
           <p class="font-thin">Ideal solution for new creators</p>
           <p class="text-6xl font-medium">0</p>

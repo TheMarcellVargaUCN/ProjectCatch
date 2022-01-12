@@ -15,20 +15,24 @@
   <div class="relative min-h-screen md:flex">
 
     <!-- mobile menu bar -->
-    <div class="bg-gray-800 text-gray-100 flex justify-between md:hidden">
+    <div class="bg-gunpowder-gray/30 fixed z-50 w-full">
+    <div class="text-white flex flex-row items-center justify-between md:hidden">
       <!-- logo -->
-      <a href="#" class="block p-4 text-white font-bold">Better Dev</a>
+      <a href="#" class=" md:block p-4 m-2 text-white font-bold">
+        <img class="w-1/2" src="../images/catch-logo.png">
+      </a>
   
       <!-- mobile menu button -->
-      <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
+      <button class="navbar-hamburger w-12 h-12 flex items-center justify-center rounded-full bg-gunpowder-gray/30 mobile-menu-button p-4 m-2 focus:outline-none focus:bg-gray-700">
         <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
+  </div>
   
     <!-- sidebar -->
-    <div class="flex flex-col justify-between sidebar rounded-r-quarter-rad custom-bg-side backdrop-blur-xl text-blue-100 w-max space-y-6 py-7 pl-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+    <div class="navbar-links z-50 flex flex-col justify-between sidebar rounded-r-quarter-rad custom-bg-side backdrop-blur-xl text-blue-100 w-max max-h-screen space-y-6 py-7 pl-2 absolute md:sticky inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition duration-200 ease-in-out">
       <!-- logo -->
         <a href="#" class="text-white flex flex-col items-center space-x-2 px-4">
           <img src="../images/profile.png" alt="profile-image">
@@ -37,32 +41,32 @@
         </a>
   
       <!-- nav -->
-      <nav class="flex flex-col gap-4 font-light text-white">
+      <nav class="flex flex-col gap-4 font-light text-white ">
         <a href="/index.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
             <i class="fas fa-home"></i>
             HOME
         </a>
-        <a href="/assets/pages/content.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+        <a href="../pages/content.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
             <i class="far fa-image"></i>
             CONTENT
         </a>
-        <a href="/assets/pages/cases.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+        <a href="../pages/cases.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
           <i class="fas fa-user-tie"></i>
           CASES
         </a>
-        <a href="/assets/pages/analytics.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+        <a href="../pages/analytics.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
           <i class="far fa-chart-bar"></i>
           ANALYTICS
         </a>
-        <a href="/assets/pages/blog.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+        <a href="../pages/blog.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
           <i class="far fa-newspaper"></i>
           BLOG
         </a>
-        <a href="/assets/pages/pricing.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+        <a href="../pages/pricing.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
           <i class="far fa-money-bill-alt"></i>  
           PRICING
         </a>
-        <a href="/assets/pages/settings.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+        <a href="../pages/settings.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
           <i class="fas fa-sliders-h"></i>  
           SETTINGS
         </a>
@@ -78,13 +82,13 @@
     <!-- content -->
     <main class="w-full">
       <div class="flex flex-row justify-end px-10 pt-4 text-2xl">
-        <span class="fa-stack fa-1x">
+        <span class="fa-stack fa-1x hidden md:inline-block">
           <a href="#">
             <i class="fa fa-circle fa-stack-2x text-white/20"></i>
             <i class="far fa-comment fa-stack-1x text-white"></i>
           </a>
         </span>
-        <span class="fa-stack fa-1x">
+        <span class="fa-stack fa-1x hidden md:inline-block">
           <a href="#" onclick="notifications()">
             <i class="fa fa-circle fa-stack-2x text-white/20"></i>
             <i class="far fa-bell fa-stack-1x text-white"></i>
@@ -97,12 +101,12 @@
       </div>
 
       <div class="flex flex-col justify-start px-24">
-        <img src="../images/catchscanlogo.png" class="w-2/12" alt="logo">
+        <img src="../images/catchscanlogo.png" class="hidden md:inline-block w-64" alt="logo">
       </div>
       
       <!-- Inspiration taken from: https://larainfo.com/blogs/tailwind-css-search-examples -->
-      <div class="flex px-24 pt-3">
-        <div class="flex rounded-full custom-bg-2">
+      <div class="flex justify-center md:justify-start md:px-24 pt-16 md:pt-3">
+        <div class="flex rounded-full custom-bg-2 mt-8 mb-2">
             <input type="search" class="px-4 py-2 w-80 text- bg-transparent focus:rounded-full focus:text-white"  placeholder="Search...">
             <button class="flex items-center justify-center px-4">
                 <svg class="w-6 h-6 text-gray-600" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"
@@ -114,34 +118,38 @@
         </div>
       </div>
 
-      <span class="flex flex-row pr-2">
-        <div class="flex pl-24 pt-3">
-          <div class="flex rounded-full custom-bg-2">
+      <span class="flex flex-col md:flex-row pr-2 mb-2">
+        <div class="flex pr-52 md:pr-0 md:pl-24 pt-3">
+          <div class="flex m-auto md:m-0 rounded-full custom-bg-2">
               <i class="far fa-circle px-4 py-3 border-r text-white" id="empty-el"></i>
               <i class="fas fa-circle px-4 py-3 border-r text-white hidden" id="selected-el"></i>
               <input type="button" onclick="selectedButton()" class="px-4 text-white bg-transparent focus:text-white cursor-pointer"  value="Select all">
           </div>
         </div>
-        <div class="flex pl-2 pt-3">
+        <div class="flex flex-row m-auto md:m-0">
+        <div class="flex gap-x-4 md:pl-2 pt-3">
           <div class="flex rounded-full custom-bg-2">
               <input type="button" class="px-4 cursor-pointer text-white bg-transparent focus:rounded-full focus:text-white"  value="Match Found">
           </div>
         </div>
-        <div class="flex pl-2 pt-3">
+        <div class="flex gap-x-4 md:pl-2 pt-3">
           <div class="flex rounded-full custom-bg-2">
               <input type="button" class="px-4 cursor-pointer text-white bg-transparent focus:rounded-full focus:text-white"  value="No matches">
           </div>
         </div>
-        <div class="flex pl-2 pt-3">
+        <div class="flex gap-x-4 md:pl-2 pt-3">
           <div class="flex rounded-full custom-bg-2">
               <input type="button" class="px-4 py-2 cursor-pointer text-white bg-transparent focus:rounded-full focus:text-white"  value="Canceled">
           </div>
         </div>
+      </div>
       </span>
-      <section class="grid grid-rows-2 grid-cols-3 px-24 pt-3 text-white max-h-128">
-        <div>
-          <img src="../images/owl.jpg" alt="owl" class="object-none rounded-t-3xl w-11/12 h-4/6">
-          <span class="flex flex-row justify-between items-center custom-bg-2 rounded-b-3xl py-2 px-4 w-11/12">
+      
+      <section class="container m-auto grid grid-cols-3 grid-rows-1 gap-4 px-12 lg:px-24 pt-4 text-white">
+
+        <div class="container flex flex-col custom-bg rounded-3xl backdrop-blur-2xl text-white text-center w-full h-fit">
+          <img src="../images/owl.jpg" alt="owl" class="object-none rounded-t-3xl w-full h-48">
+          <span class="flex flex-col md:flex-row justify-between items-center custom-bg-2 rounded-b-3xl py-2 px-4 w-full h-32 md:h-full">
             <p>owl-in-the-forest.png</p>
             <div class="custom-bg-2 py-2 px-4 rounded-xl">
               <i class="far fa-edit border-r pr-3 cursor-pointer"></i>
@@ -149,9 +157,10 @@
             </div>
           </span>
         </div>
-        <div>
-          <img src="../images/cute-cat.jpg" alt="owl" class="object-none rounded-t-3xl w-11/12 h-4/6">
-          <span class="flex flex-row justify-between items-center custom-bg-2 rounded-b-3xl py-2 px-4 w-11/12">
+
+        <div class="container flex flex-col custom-bg rounded-3xl backdrop-blur-2xl text-white text-center w-full h-fit">
+          <img src="../images/cute-cat.jpg" alt="owl" class="object-none rounded-t-3xl w-full h-48">
+          <span class="flex flex-col md:flex-row justify-between items-center custom-bg-2 rounded-b-3xl py-2 px-4 w-full h-32 md:h-full">
             <p>cute-cat.png</p>
             <div class="custom-bg-2 py-2 px-4 rounded-xl">
               <i class="far fa-edit border-r pr-3 cursor-pointer"></i>
@@ -159,9 +168,10 @@
             </div>
           </span>
         </div>
-        <div>
-          <img src="../images/winter-night.jpg" alt="owl" class="object-none rounded-t-3xl w-11/12 h-4/6">
-          <span class="flex flex-row justify-between items-center custom-bg-2 rounded-b-3xl py-2 px-4 w-11/12">
+
+        <div class="container flex flex-col custom-bg rounded-3xl backdrop-blur-2xl text-white text-center w-full h-fit">
+          <img src="../images/winter-night.jpg" alt="owl" class="object-none rounded-t-3xl w-full h-48">
+          <span class="flex flex-col md:flex-row justify-between items-center custom-bg-2 rounded-b-3xl py-2 px-4 w-full h-32 md:h-full">
             <p>winter-night-c.png</p>
             <div class="custom-bg-2 py-2 px-4 rounded-xl">
               <i class="far fa-edit border-r pr-3 cursor-pointer"></i>
@@ -169,9 +179,10 @@
             </div>
           </span>
         </div>
-        <div>
-          <img src="../images/yoga-classes.jpg" alt="owl" class="object-none rounded-t-3xl w-11/12 h-4/6">
-          <span class="flex flex-row justify-between items-center custom-bg-2 rounded-b-3xl py-2 px-4 w-11/12">
+
+        <div class="container flex flex-col custom-bg rounded-3xl backdrop-blur-2xl text-white text-center w-full h-fit">
+          <img src="../images/yoga-classes.jpg" alt="owl" class="object-none rounded-t-3xl w-full h-48">
+          <span class="flex flex-col md:flex-row justify-between items-center custom-bg-2 rounded-b-3xl py-2 px-4 w-full h-32 md:h-full">
             <p>joga-classes.png</p>
             <div class="custom-bg-2 py-2 px-4 rounded-xl">
               <i class="far fa-edit border-r pr-3 cursor-pointer"></i>
@@ -179,9 +190,10 @@
             </div>
           </span>
         </div>
-        <div>
-          <img src="../images/polar-bear.jpg" alt="owl" class="object-none rounded-t-3xl w-11/12 h-4/6">
-          <span class="flex flex-row justify-between items-center custom-bg-2 rounded-b-3xl py-2 px-4 w-11/12">
+
+        <div class="container flex flex-col custom-bg rounded-3xl backdrop-blur-2xl text-white text-center w-full h-fit">
+          <img src="../images/polar-bear.jpg" alt="owl" class="object-none rounded-t-3xl w-full h-48">
+          <span class="flex flex-col md:flex-row justify-between items-center custom-bg-2 rounded-b-3xl py-2 px-4 w-full h-32 md:h-full">
             <p>polar-bear.jpg</p>
             <div class="custom-bg-2 py-2 px-4 rounded-xl">
               <i class="far fa-edit border-r pr-3 cursor-pointer"></i>
@@ -189,9 +201,10 @@
             </div>
           </span>
         </div>
-        <div>
-          <img src="../images/audio-studio.jpg" alt="owl" class="object-none rounded-t-3xl w-11/12 h-4/6">
-          <span class="flex flex-row justify-between items-center custom-bg-2 rounded-b-3xl py-2 px-4 w-11/12">
+
+        <div class="container flex flex-col custom-bg rounded-3xl backdrop-blur-2xl text-white text-center w-full h-fit">
+          <img src="../images/audio-studio.jpg" alt="owl" class="object-none rounded-t-3xl w-full h-48">
+          <span class="flex flex-col md:flex-row justify-between items-center custom-bg-2 rounded-b-3xl py-2 px-4 w-full h-32 md:h-full">
             <p>audio-studio.jpg</p>
             <div class="custom-bg-2 py-2 px-4 rounded-xl">
               <i class="far fa-edit border-r pr-3 cursor-pointer"></i>
@@ -199,6 +212,7 @@
             </div>
           </span>
         </div>
+
       </section>
       
     </main>

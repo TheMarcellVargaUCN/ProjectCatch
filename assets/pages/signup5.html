@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="CatchScan - Blank" content="Blank">
     <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
+    <link href="../css/tick.css" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
     <title>CatchScan</title>
 </head>
@@ -21,29 +22,40 @@
             </div>
 
             
-            <div class="container flex flex-col w-1/3 m-auto mt-0">
+            <div class="container flex flex-col w-1/3 m-auto mt-0 ">
 
-                <i class="far fa-check-circle text-white text-7xl"></i>
+                <div class="icon icon--order-success svg m-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="154px" height="154px">  
+                      <g fill="none" stroke="#22AE73" stroke-width="2"> 
+                        <circle cx="77" cy="77" r="72" style="stroke-dasharray:480px, 480px; stroke-dashoffset: 960px;"></circle>
+                        <circle id="colored" fill="#22AE73" cx="77" cy="77" r="72" style="stroke-dasharray:480px, 480px; stroke-dashoffset: 960px;"></circle>
+                        <polyline class="st0" stroke="#fff" stroke-width="10" points="43.5,77.8 63.7,97.9 112.2,49.4 " style="stroke-dasharray:100px, 100px; stroke-dashoffset: 200px;"/>   
+                      </g> 
+                    </svg>
+                  </div>
+
 
                 <div>
                     <h1 class="text-white text-sm pt-2">You are all set!</h1>
                 </div>
+
+
             
 
                 <div class="bg-gunpowder-gray/40 text-white rounded-full m-auto px-2 md:px-4 lg:px-8 xl-px10 py-2 mt-8">
-                    <button class="btn" onclick="nextStep()">Get started</button>
+                    <a href="../pages/dashboard.html">Get started</a>
                 </div>
 
             </div>
 
             <div class="flex flex-row">
                 <div class=" text-white rounded-full m-auto px-10 py-2 my-4 float-left">
-                    <button class="btn" onclick="lastStep()">Back</button>
+                    <a href="/assets/pages/signup4.html">Back</a>
                 </div>
 
 
                 <div class="text-white rounded-full m-auto px-10 py-2 my-4 mr-">
-                    <button class="btn hidden" onclick="nextStep()">Next</button>
+                    <a class="hidden" href="#">Next</a>
                 </div>
             </div>
 

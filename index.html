@@ -1,182 +1,73 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="CatchScan - Blank" content="Blank">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
-  <script src="./assets/js/script.js" defer></script>
-  <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
-  <link href="/dist/output.css" rel="stylesheet">
-  <title>CatchScan</title>
-</head>
-<body class="bg-gradient-to-r from-catch-blue-300 via-catch-blue-200 to-catch-blue-100 font-roboto">
-  <div class="relative min-h-screen md:flex">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="CatchScan - Blank" content="Blank">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <script src="./assets/js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>CatchScan</title>
+  </head>
 
-    <!-- mobile menu bar -->
-    <div class="bg-gunpowder-gray/30 fixed z-50 w-full">
-    <div class="text-white flex flex-row items-center justify-between md:hidden">
-      <!-- logo -->
-      <a href="#" class=" md:block p-4 m-2 text-white font-bold">
-        <img class="w-1/2" src="assets/images/catch-logo.png">
-      </a>
-  
-      <!-- mobile menu button -->
-      <button class="navbar-hamburger w-12 h-12 flex items-center justify-center rounded-full bg-gunpowder-gray/30 mobile-menu-button p-4 m-2 focus:outline-none focus:bg-gray-700">
-        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-  </div>
-  
-    <!-- sidebar -->
-    <div class="navbar-links z-50 flex flex-col justify-between sidebar rounded-r-quarter-rad custom-bg-side backdrop-blur-xl text-blue-100 w-max max-h-screen space-y-6 py-7 pl-2 absolute md:sticky inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition duration-200 ease-in-out">
-      <!-- logo -->
-        <a href="#" class="text-white flex flex-col items-center space-x-2 px-4">
-          <img src="./assets/images/profile.png" alt="profile-image">
-          <span class="text-xl font-medium">Emily Møller</span>
-          <span class="text-l font-light">emilymoller@email.com</span>
-        </a>
-  
-      <!-- nav -->
-      <nav class="flex flex-col gap-4 font-light text-white ">
-        <a href="/index.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
-            <i class="fas fa-home"></i>
-            HOME
-        </a>
-        <a href="/assets/pages/content.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
-            <i class="far fa-image"></i>
-            CONTENT
-        </a>
-        <a href="/assets/pages/cases.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
-          <i class="fas fa-user-tie"></i>
-          CASES
-        </a>
-        <a href="/assets/pages/analytics.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
-          <i class="far fa-chart-bar"></i>
-          ANALYTICS
-        </a>
-        <a href="/assets/pages/blog.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
-          <i class="far fa-newspaper"></i>
-          BLOG
-        </a>
-        <a href="/assets/pages/pricing.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
-          <i class="far fa-money-bill-alt"></i>  
-          PRICING
-        </a>
-        <a href="/assets/pages/settings.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
-          <i class="fas fa-sliders-h"></i>  
-          SETTINGS
-        </a>
-      </nav>
+<body>
 
-      <!-- footer -->
-      <div class="flex flex-col items-center gap-1">
-        <p class="text-xs font-light">CatchScan © - All right reserved</p>
-        <hr class="w-16">
-      </div>
-    </div>
-  
-    <!-- content -->
-    <main class="w-full">
-      <div class="flex flex-row justify-end px-10 pt-4 text-2xl">
-        <span class="fa-stack fa-1x hidden md:inline-block">
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-            <i class="fa fa-circle fa-stack-2x text-white/20"></i>
-            <i class="fas fa-video fa-stack-1x text-white"></i>
-          </a>
-        </span>
-        <span class="fa-stack fa-1x hidden md:inline-block">
-          <a href="#">
-            <i class="fa fa-circle fa-stack-2x text-white/20"></i>
-            <i class="far fa-comment fa-stack-1x text-white"></i>
-          </a>
-        </span>
-        <span class="fa-stack fa-1x hidden md:inline-block">
-          <a href="#" onclick="notifications()">
-            <i class="fa fa-circle fa-stack-2x text-white/20"></i>
-            <i class="far fa-bell fa-stack-1x text-white"></i>
-          </a>
-        </span>
-      </div>
+    <div class="flex flex-col bg-gradient-to-r from-catch-blue-300 via-catch-blue-200 to-catch-blue-100 font-roboto flex items-center justify-center h-screen">
+    
+        <div class="container rounded-3xl bg-gradient-to-bl from-white/60 to-white/10backdrop-blur-xl text-blue-100 w-3/3 sm:w-2/3 lg:w-1/3 h-4/5 md:3/5 m-auto flex flex-col text-center">
 
-      <div class="absolute right-0 top-16">
-        <img src="./assets/images/notification.png" alt="notification" class="hidden w-10/12" id="bell">
-      </div>
-
-      <div class="flex flex-col justify-start px-24 pt-16 md:pt-0">
-        <p class="text-2xl text-white font-extralight">Hello,<p>
-        <p class="text-5xl text-white font-medium">Emily👋</p>
-        <br>
-        <p class="text-lg text-white font-extralight">See what has changed since your last login!<p>
-      </div>
-
-      <section class="grid grid-cols-1 grid-rows-1 gap-y-4 lg:grid-cols-3 lg:grid-rows-2 lg:gap-4 px-24 py-2">
-        <article class="col-span-2 flex flex-col gap-4 border-dashed border-white border-2 rounded-3xl items-center">
-            <label class="cursor-pointer upload backdrop-blur-3xl mt-2">
-              <i class="fas fa-2x fa-cloud-upload-alt text-white"></i>
-              <input type='file' class="hidden" />
-            </label>
-         </label>
-          <p class="text-2xl text-white">Browse local files</p>
-          <div class="flex flex-row items-center text-xl font-light">
-            <hr class="w-24">
-            <p class="text-white px-6">or</p>
-            <hr class="w-24">
-          </div>
-          <img class="pb-2" src="./assets/images/instagram.png" alt="instagram">
-        </article>
-        <article class="custom-bg rounded-3xl backdrop-blur-2xl text-white">
-          <p class='pl-16 pt-2 font-light text-lg'>Total revenue:</p>
-          <p class="text-2xl pl-16 pb-2">99999,00 DKK</p>
-          <hr>
-          <p class='pl-16 pt-2 font-light text-lg'>Ongoing cases:</p>
-          <p class="text-2xl pl-16 pb-2">1</p>
-          <hr>
-          <p class='pl-16 pt-2 font-light text-lg'>Done cases:</p>
-          <p class="text-2xl pl-16 pb-2">24</p>
-        </article>
-        <article class="custom-bg rounded-3xl backdrop-blur-2xl col-span-2 text-white px-12 py-2">
-          <p class="text-2xl font-medium">Ongoing cases:</p>
-          
-          <div class="flex flex-col gap-y-4 md:flex-row py-4 md:pt-4">
-            
-            <img src="./assets/images/sea.png" alt="sea">
-
-            <div class="flex flex-col pl-10">
-              <p class="pl-3 font-medium">This is case title</p>
-              <div class="flex pt-5 font-light">
-                <i class="fas fa-check pr-4 pt-1"></i>
-                <p>06/01/2022    The infringing party has been contacted</p>
-              </div>
-              <div class="flex pt-2 font-light">
-                <i class="fas fa-check pr-4 pt-1"></i>
-                <p>12/01/2022   The infringing party has responded</p>
-              </div>
-              <div class="flex pt-2 font-light">
-                <i class="fas fa-check pr-4 pt-1"></i>
-                <p>
-                  13/01/2022    Negotiations has started.
-                  </p>
-              </div>
+            <div>
+                <img class="w-3/4 m-auto mt-8 mb-4" src="/assets/images/catchscanlogo.png">
             </div>
+            
+            <form class="flex flex-col w-2/3 m-auto mt-4">
+                
+                <div class="container bg-gunpowder-gray/40 rounded-full m-auto px-8 py-2 mb-4 ">
+                    <input class="bg-transparent block w-full placeholder:text-white text-left" type="text" id="email" name="email" placeholder="Email address">
+                </div>
+                
 
-          </div>
-            <!-- <div class="flex flex-row justify-end">
-              <button class="bg-white/10 py-2 px-12 rounded-full">More > </button>
-            </div> -->
-        </article>
-        <article class="flex flex-col gap-y-4 custom-bg rounded-3xl backdrop-blur-2xl text-white px-10 py-4 md:py-2">
-          <p class="text-lg font-light">Our latest news:</p>
-          <div class="flex flex-row justify-center">
-            <img  class='pt-2 w-10/12' src="./assets/images/blog.png" alt="blog">
-          </div>
-        </article>
-      </section>
-    </main>
-  
-  </div>
+                <div class="container bg-gunpowder-gray/40 rounded-full m-auto px-8 py-2 mb-4 ">
+                    <input class="bg-transparent block w-full placeholder:text-white text-left" type="text" id="pass" name="pass" placeholder="Password">
+                </div>
+
+                <div class="container text-white my-4">You haven't joined us yet? <span class="font-bold underline"><a href="#">Sign up</a></span><br>
+                    <span class="font-bold underline "><a href="#">Forgot your password?</a></span>            
+                </div>
+
+                <fieldset class="border border-solid border-white border-l-0 border-r-0 border-b-0 mx-12">
+                    <legend class="px-10">or</legend>
+                </fieldset>
+
+                <div class="flex flex-row space-x-6 justify-between m-auto my-4">
+
+                <div class="container w-12 h-12 flex items-center justify-center rounded-lg bg-facebook-blue">
+                    <i class="fab fa-facebook-f justify-items-center text-white"></i>
+                </div>
+
+                <div class="container w-12 h-12 flex items-center justify-center rounded-lg bg-white">
+                    <img class="w-4" src="/assets/images/Google__G__Logo.svg">
+                </div>
+
+                <div class="container w-12 h-12 flex items-center justify-center rounded-lg bg-black">
+                    <i class="fab fa-apple justify-items-center text-white"></i>
+                </div>
+
+                </div>
+
+                <div class="bg-gunpowder-gray/40 text-white rounded-full m-auto px-10 py-2 mt-4">
+                    <a href="/assets/pages/signup1.html">Get started</a>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="text-xs text-white text-center font-si mb-4">Copyright © 2022 CatchScan - All rights reserved.</div>
+        
+    </div>
+    
 </body>
+
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="CatchScan - Blank" content="Blank">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <script src="./assets/js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
     <link href="/dist/output.css" rel="stylesheet">
     <title>CatchScan</title>
@@ -13,55 +14,59 @@
   <body class="bg-gradient-to-r from-catch-blue-300 via-catch-blue-200 to-catch-blue-100 font-roboto">
     <div class="relative min-h-screen md:flex">
   
-      <!-- mobile menu bar -->
-      <div class="bg-gray-800 text-gray-100 flex justify-between md:hidden">
+    <!-- mobile menu bar -->
+    <div class="bg-gunpowder-gray/30 fixed z-50 w-full">
+      <div class="text-white flex flex-row items-center justify-between md:hidden">
         <!-- logo -->
-        <a href="#" class="block p-4 text-white font-bold">Better Dev</a>
+        <a href="#" class=" md:block p-4 m-2 text-white font-bold">
+          <img class="w-1/2" src="../images/catch-logo.png">
+        </a>
     
         <!-- mobile menu button -->
-        <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
+        <button class="navbar-hamburger w-12 h-12 flex items-center justify-center rounded-full bg-gunpowder-gray/30 mobile-menu-button p-4 m-2 focus:outline-none focus:bg-gray-700">
           <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </div>
+    </div>
     
       <!-- sidebar -->
-      <div class="flex flex-col justify-between sidebar rounded-r-quarter-rad custom-bg-side backdrop-blur-xl text-blue-100 w-max space-y-6 py-7 pl-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+      <div class="navbar-links z-50 flex flex-col justify-between sidebar rounded-r-quarter-rad custom-bg-side backdrop-blur-xl text-blue-100 w-max max-h-screen space-y-6 py-7 pl-2 absolute md:sticky inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition duration-200 ease-in-out">
         <!-- logo -->
           <a href="#" class="text-white flex flex-col items-center space-x-2 px-4">
-            <img src="/assets/images/profile.png" alt="profile-image">
+            <img src="../images/profile.png" alt="profile-image">
             <span class="text-xl font-medium">Emily Møller</span>
             <span class="text-l font-light">emilymoller@email.com</span>
           </a>
     
         <!-- nav -->
-        <nav class="flex flex-col gap-4 font-light text-white">
+        <nav class="flex flex-col gap-4 font-light text-white ">
           <a href="/index.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
               <i class="fas fa-home"></i>
               HOME
           </a>
-          <a href="/assets/pages/content.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+          <a href="../pages/content.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
               <i class="far fa-image"></i>
               CONTENT
           </a>
-          <a href="/assets/pages/cases.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+          <a href="../pages/cases.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
             <i class="fas fa-user-tie"></i>
             CASES
           </a>
-          <a href="/assets/pages/analytics.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+          <a href="../pages/analytics.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
             <i class="far fa-chart-bar"></i>
             ANALYTICS
           </a>
-          <a href="/assets/pages/blog.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+          <a href="../pages/blog.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
             <i class="far fa-newspaper"></i>
             BLOG
           </a>
-          <a href="/assets/pages/pricing.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+          <a href="../pages/pricing.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
             <i class="far fa-money-bill-alt"></i>  
             PRICING
           </a>
-          <a href="/assets/pages/settings.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
+          <a href="../pages/settings.html" class="block py-2.5 px-4 rounded-l-max transition duration-200 hover:bg-white hover:text-black">
             <i class="fas fa-sliders-h"></i>  
             SETTINGS
           </a>
@@ -73,7 +78,7 @@
           <hr class="w-16">
         </div>
       </div>
-    
+        
       <!-- content -->
       <main class="w-full">
         <div class="flex flex-row justify-end px-10 pt-4 text-2xl">
@@ -83,29 +88,29 @@
               <i class="fas fa-video fa-stack-1x text-white"></i>
             </a>
           </span>
-          <span class="fa-stack fa-1x">
+          <span class="fa-stack fa-1x hidden md:inline-block">
             <a href="#">
               <i class="fa fa-circle fa-stack-2x text-white/20"></i>
               <i class="far fa-comment fa-stack-1x text-white"></i>
             </a>
           </span>
-          <span class="fa-stack fa-1x">
+          <span class="fa-stack fa-1x hidden md:inline-block">
             <a href="#" onclick="notifications()">
               <i class="fa fa-circle fa-stack-2x text-white/20"></i>
               <i class="far fa-bell fa-stack-1x text-white"></i>
             </a>
           </span>
-        </div>
+          </div>
   
         <div class="absolute right-0 top-16">
-          <img src="/assets/images/notification.png" alt="notification" class="hidden w-10/12" id="bell">
+          <img src="../images/notification.png" alt="notification" class="hidden w-10/12" id="bell">
         </div>
   
-        <div class="flex flex-col justify-start px-24">
-          <img src="../images/catchscanlogo.png" class="w-2/12" alt="logo">
-        </div>
+      <div class="flex flex-col justify-start px-24">
+        <img src="../images/catchscanlogo.png" class="hidden md:inline-block w-64" alt="logo">
+      </div>
 
-        <div class="text-white text-center my-4">
+        <div class="text-white text-center my-4 mt-24 md:mt-0">
           <h1>Check out the latest news!</h1>
         </div>
   
